@@ -14,12 +14,12 @@ export class AppController {
   @Post('users')
   create(){
     return this.userRepository.save({
-      title: "test title"
+   
     });
   }
 
   @Get('users')
-  getHello()  {
+  getHello(){
     return this.userRepository.find();
   }
 
